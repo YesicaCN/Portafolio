@@ -1,0 +1,24 @@
+
+/**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*variables*/
+:root{
+    --body-heading: 'bubik', sans-serif;
+    --body-font:'Roboto', sans-serif;
+
+    --small-body-size: 0.75 rem; 
+    --big-body-size: 1.25 rem;
+
+    --small-title-size: 2rem;
+    --normal-title-size: 2.5rem;
+    --big-title-size: 2.5 rem;
+    --primary-color:#2D4D5F;
+    --secundary-color: F8414D;
+
+}

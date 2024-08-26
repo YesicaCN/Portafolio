@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Yesica</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#acerca-de-mi">ACERCA DE MI</a></li>
+                <li><a href="#proyectos">PROYECTOS</a></li>
+                <li><a href="#habilidades">HABILIDADES</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+                <li><a href="#blog">BLOG</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="inicio">
+        <div class="grid-container">
+            
+            <div class="bienvenida">
+                <h1>¡Hola, Mi nombre es Yesica!</h1>
+                <p>Tengo 23 años, me encanta ver series, jugar ajedrez y el deporte. 
+                    También me gusta socializar con las personas.</p>
+                <button onclick="descargarCV()">Descarga mi CV</button>
+            </div>
+
+            <div class="foto-perfil">
+                <img src="foto-yes.jpeg" alt="Foto de Yesica">
+            </div>
+        </div>
+    </section>
+    
+    <section id="acerca-de-mi">
+        
+        <div class="informacion">
+            <h2>Sobre Mis Estudios</h2>
+            <div class="foto-estudios">
+                <img src="foto-yes.jpeg" alt="Estudios de Yesica">
+            </div>
+            <div >
+                <p>Soy, estudiante de la carrera de Ingenieria Informatica y Sistemas de la universidad Micaela Bastidas de Apurimac.
+                Me apasiona crear tecnologias nuevas y estar en constante aprendizaje sobre cualquier tema relacionado al desarrollo web. 
+                Tengo conocimientos en Html, css, y desarrrollo de proyectos web con wordpress. Afuturo aspiro ser freelancer y
+                hacer proyectos tecnologicos con mayor alcance.</p>
+            </div>
+                
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/yesica" target="_blank"><img src="icons8-linkedin.svg" alt="LinkedIn"> LinkedIn</a>
+                <a href="mailto:yesica@gmail.com"><img src="icons8-gmail-50.png" alt="Gmail"> Gmail</a>
+                <a href="https://github.com/yesica" target="_blank"><img src="icons8-github-50.png" alt="GitHub"> GitHub</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="ropa.jpg" alt="Proyecto 1">
+                <h3>Desarrollo de una Página Web con WordPress para una tienda de Ropas</h3>
+                <p>Descripción:      se desarrolló una página web para una tienda de ropa 
+                    con la configuración de base de datos en mysql. Permitiendo hacer ventas desde la web a domicilio.</p>
+                <p><strong>Lenguaje/ Herramienta:</strong> Java, HTML, CSS</p>
+                <button onclick="verProyecto('proyecto1')"><img src="view-icon.png" alt="Ver"> Ver</button>
+            </div>
+            <div class="card">
+                <img src="taxiss.jpg" alt="Proyecto 2">
+                <h3>Desarrollo de una Página Web para alquiler de autos </h3>
+                <p>Descripción:      se desarrolló una página web para el alquiler de auto para diferentes motivos 
+                    ya sea viajes, un dia de paseo con la configuración de base de datos en mysql. 
+                    Permitiendo al cliente hacer recepciones desde su domicilio</p>
+                <p><strong>Lenguaje/ Herramienta:</strong> JavaScript, Node.js</p>
+                <button onclick="verProyecto('proyecto2')"><img src="view-icon.png" alt="Ver"> Ver</button>
+            </div>
+            <div class="card">
+                <img src="hostal.jpg" alt="Proyecto 3">
+                <h3>Sistema web de recepcion y Facturación para el Hospedaje Luna Abancay</h3>
+                <p>Descripción: se desarrolló un interfaz de recepcion, facturacion y validacion de pago
+                   con conexion a una base de datos en mysql. Permitiendo al cliente hacer reservacion de
+                   una habitacion y la entrega de un comprobante y tener los registros de los usuarios
+                   y reporte mensuales</p>
+                <p><strong>Lenguaje/ Herramienta:</strong> Python, Django</p>
+                <button onclick="verProyecto('proyecto3')"><img src="view-icon.png" alt="Ver"> Ver</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="habilidades-lista">
+            <!-- Aquí irán las barras de habilidades -->
+        </div>
+        <div class="cursos">
+            <h3>Cursos</h3>
+            <ul>
+                <li>Inglés</li>
+                <li>Word</li>
+                <li>Excel</li>
+                <li>Canva</li>
+                <li>Figma</li>
+                <!-- Agrega más cursos si es necesario -->
+            </ul>
+        </div>
+    </section>
+    
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="blog-container">
+            <div class="blog-card">
+                <h3>Blog 1</h3>
+                <p>Resumen del blog 1...</p>
+                <button onclick="verBlog('blog1')"><img src="view-icon.png" alt="Ver"> Ver</button>
+            </div>
+            <div class="blog-card">
+                <h3>Blog 2</h3>
+                <p>Resumen del blog 2...</p>
+                <button onclick="verBlog('blog2')"><img src="view-icon.png" alt="Ver"> Ver</button>
+            </div>
+            <div class="blog-card">
+                <h3>Blog 3</h3>
+                <p>Resumen del blog 3...</p>
+                <button onclick="verBlog('blog3')"><img src="view-icon.png" alt="Ver"> Ver</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <a href="https://www.linkedin.com/in/yesica" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="mailto:yesica@gmail.com"><img src="gmail-icon.png" alt="Gmail"></a>
+            <a href="https://github.com/yesica" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
